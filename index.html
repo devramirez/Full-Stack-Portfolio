@@ -47,11 +47,11 @@
                             cum possimus itaque architecto, provident at eos id?</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                             <li><span>Web Development</span><br>Web/App Development</li>
@@ -59,7 +59,15 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Personal Portfolio</li>
+                            <li><span>Web Development</span><br>Creating CSS Cheatsheet</li>
+                            <li><span>App Development</span><br>Built a Calculator App</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2014</span><br>A.S Computer Information Technology</li>
                             <li><span>2017</span><br>B.S Information Computer Systems</li>
@@ -67,17 +75,25 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web/App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
