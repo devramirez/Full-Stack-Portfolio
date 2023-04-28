@@ -16,8 +16,8 @@ Other resources I used were taken from [W3 Schools](https://www.w3schools.com/cs
 
 ## GitHub Pages
 
-The link provided here is the URL of the deployed application. [Pages]
+The link provided here is the URL of the deployed application. [Pages](https://devramirez.github.io/Full-Stack-Portfolio/#contact)
 
 ## Repository 
 
-The link provided here is the URL of the GitHub repo. [Repo]
+The link provided here is the URL of the GitHub repo. [Repo](https://github.com/devramirez/Full-Stack-Portfolio.git)
