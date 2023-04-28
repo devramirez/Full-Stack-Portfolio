@@ -7,6 +7,7 @@
     <title>Andrew - Personal Portfolio Website</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/cb6ac5ff8b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- ----Header Section---- -->
@@ -161,7 +162,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>aramirezdev1@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>123-456-7890</p>
                 <div class="social-icons">
                     <a href="https://github.com/devramirez"><i class="fa-brands fa-github"></i></a>
@@ -169,34 +170,16 @@
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <a href="assets/images/Resume_ARamirez_061021 1.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="contact-right"></div>
-            <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message Here"></textarea>
-                <button type="submit">Submit</button>
-            </form>
         </div>
+    </div>
+    <!-- ----Footer Section---- -->
+
+    <div class="footer">
+        <p>Made with ❤️ by Andrew</p>
     </div>
 </div>
 
-
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for(tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
 </body>
 </html>
