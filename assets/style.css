@@ -287,9 +287,9 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
-.contact-right {
+/* .contact-right {
     flex-basis: 60%;
-}
+} */
 
 .contact-left p {
     margin-top: 30px;
@@ -314,4 +314,30 @@ nav ul li a:hover::after {
 .social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.footer i {
+    color: #ff004f;
+}
+
+/* ----Adding Responsiveness---- */
+
+@media screen and (max-width: 768px) {
+header,
+nav {
+    flex-direction: column;
+}
 }
